@@ -71,7 +71,7 @@ for i, feature in enumerate(display_features_to_scale):
 for model_key in selected_models:
     for feature in additional_features[model_key]:
         # 允许保留较多小数位的输入
-        user_input[feature] = st.number_input(f"{feature} ({model_key}):", min_value=0.0, format="%.8f")
+        user_input[feature] = st.number_input(f"{feature} ({model_key}):", min_value=0.0, format="%.9f")
 
 # 定义模型预测结果存储字典
 model_predictions = {}
